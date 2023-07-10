@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESTINOS NACIONALES</title>
     <link rel="stylesheet" type="text/css" href="style/Destinos Nacionales.css"/>
+    <link rel="stylesheet" href="style/stylo.css">
+    <script>
+        function abrirDescripcion(imagenSrc, descripcion) {
+            var ventana = window.open("", "_blank");
+            ventana.document.write(`
+                <html>
+                <head>
+                    <title>Destino Seleccionado</title>
+                    <style>
+                       
+                        body {
+                            text-align: center;
+                            padding: 20px;
+                            font-family: Arial, sans-serif;
+                        }
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                            margin-bottom: 20px;
+                        }
+                        h1 {
+                            font-size: 24px;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 1.5;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <img src="${imagenSrc}" alt="Destino">
+                    <h1>Descripción del destino</h1>
+                    <p>${descripcion}</p>
+                </body>
+                </html>
+            `);
+            ventana.document.close();
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -35,54 +75,108 @@
     <h1>DESTINOS NACIONALES</h1>
     <section class="catalogo-vn">
         <div class="item">
-            <img src="destinos/nacionales/tumbes.jpg" width="100%" height="240px" alt=""><h2>Tumbes</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/nacionales/tumbes.jpg', 'En Viajes BG TRAVEL AND TOURS puedes encontrar descuentos imperdibles en paquetes para tu viaje a Tumbes, además contamos con una gran cantidad de paquetes turísticos para que puedas disfrutar tus vacaciones a Tumbes al máximo. ¿Quieres viajar con todo resuelto? La mejor opción es elegir un paquete a Tumbes de Viajes Falabella ya que vas a tener incluido el hotel más el vuelo de ida y vuelta. También tenemos opciones que incluyen traslado, asistencia y/o excursiones si quieres hacer tu viaje aún más completo. ¿Quieres tener movilidad propia en Bayahibe? El arriendo de autos es la mejor opción para tus vacaciones si quieres evitar el transporte público, además al sumar este producto a tu paquete vas a conseguir un descuento significativo. ¿Todavía no sabes qué paquete reservar? ¡No te preocupes! Contamos con expertos asesores de viajes que te ayudarán a elegir la opción más conveniente para ti desde la comodidad de tu casa por videollamada, contact center, whatsapp o en nuestras sucursales que se encuentran en todo el país.');">
+                <img src="destinos/nacionales/tumbes.jpg" width="100%" height="240px" alt="Tumbes">
+                <h2>Tumbes</h2>
+            </a>
         </div>
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Cajamarca</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/nacionales/cajamarca.jpg', '𝑽𝒊𝒂𝒋𝒂 𝒂 𝑨𝒚𝒂𝒄𝒖𝒄𝒉𝒐 𝒆𝒏 𝒆𝒔𝒕𝒂 𝑺𝒆𝒎𝒂𝒏𝒂 𝑺𝒂𝒏𝒕𝒂 🤩 Incluye boleto aéreo y servicios  <span>✈️🏢➡️</span>En BG Travel and Tours, queremos brindarte una asesoría completa, para asegurarnos que tu experiencia de viaje que tanto has planeado con tu familia, pareja o amigos, sea inolvidable. 😎✨📣𝐂𝐨𝐭𝐢𝐳𝐚 𝐭𝐮 𝐩𝐫ó𝐱𝐢𝐦𝐚 𝐚𝐯𝐞𝐧𝐭𝐮𝐫𝐚 𝐲 𝐫𝐞𝐬𝐞𝐫𝐯𝐚 𝐜𝐨𝐧 𝐧𝐨𝐬𝐨𝐭𝐫𝐨𝐬 𝐚𝐡𝐨𝐫𝐚 ‼️👇👇👇👇👇https://wa.me/message/NOGROGMFHX6CP1BG Travel and Tours🧑‍💻 #viajes #SemanaSanta');">
+                <img src="destinos/nacionales/cajamarca.jpg" width="100%" height="240px" alt="Cajamarca">
+                <h2>Cajamarca</h2>
+            </a>
         </div>
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Puno</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/nacionales/puno.jpg', '𝑽𝒊𝒂𝒋𝒂 𝒂 𝑨𝒚𝒂𝒄𝒖𝒄𝒉𝒐 𝒆𝒏 𝒆𝒔𝒕𝒂 𝑺𝒆𝒎𝒂𝒏𝒂 𝑺𝒂𝒏𝒕𝒂 🤩 Incluye boleto aéreo y servicios  <span>✈️🏢➡️</span>En BG Travel and Tours, queremos brindarte una asesoría completa, para asegurarnos que tu experiencia de viaje que tanto has planeado con tu familia, pareja o amigos, sea inolvidable. 😎✨📣𝐂𝐨𝐭𝐢𝐳𝐚 𝐭𝐮 𝐩𝐫ó𝐱𝐢𝐦𝐚 𝐚𝐯𝐞𝐧𝐭𝐮𝐫𝐚 𝐲 𝐫𝐞𝐬𝐞𝐫𝐯𝐚 𝐜𝐨𝐧 𝐧𝐨𝐬𝐨𝐭𝐫𝐨𝐬 𝐚𝐡𝐨𝐫𝐚 ‼️👇👇👇👇👇https://wa.me/message/NOGROGMFHX6CP1BG Travel and Tours🧑‍💻 #viajes #SemanaSanta');">
+                <img src="destinos/nacionales/puno.jpg" width="100%" height="240px" alt="Puno">
+                <h2>Puno</h2>
+            </a>
         </div>
     </section>
     <section class="catalogo-vn">
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Cuzco</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/nacionales/cuzco.jpg', '𝑽𝒊𝒂𝒋𝒂 𝒂 𝑨𝒚𝒂𝒄𝒖𝒄𝒉𝒐 𝒆𝒏 𝒆𝒔𝒕𝒂 𝑺𝒆𝒎𝒂𝒏𝒂 𝑺𝒂𝒏𝒕𝒂 🤩 Incluye boleto aéreo y servicios  <span>✈️🏢➡️</span>En BG Travel and Tours, queremos brindarte una asesoría completa, para asegurarnos que tu experiencia de viaje que tanto has planeado con tu familia, pareja o amigos, sea inolvidable. 😎✨📣𝐂𝐨𝐭𝐢𝐳𝐚 𝐭𝐮 𝐩𝐫ó𝐱𝐢𝐦𝐚 𝐚𝐯𝐞𝐧𝐭𝐮𝐫𝐚 𝐲 𝐫𝐞𝐬𝐞𝐫𝐯𝐚 𝐜𝐨𝐧 𝐧𝐨𝐬𝐨𝐭𝐫𝐨𝐬 𝐚𝐡𝐨𝐫𝐚 ‼️👇👇👇👇👇https://wa.me/message/NOGROGMFHX6CP1BG Travel and Tours🧑‍💻 #viajes #SemanaSanta');">
+                <img src="destinos/nacionales/cuzco.jpg" width="100%" height="240px" alt="Cuzco">
+                <h2>Cuzco</h2>
+            </a>
         </div>
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Arequipa</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/nacionales/arequipa.jpg', '𝑽𝒊𝒂𝒋𝒂 𝒂 𝑨𝒚𝒂𝒄𝒖𝒄𝒉𝒐 𝒆𝒏 𝒆𝒔𝒕𝒂 𝑺𝒆𝒎𝒂𝒏𝒂 𝑺𝒂𝒏𝒕𝒂 🤩 Incluye boleto aéreo y servicios  <span>✈️🏢➡️</span>En BG Travel and Tours, queremos brindarte una asesoría completa, para asegurarnos que tu experiencia de viaje que tanto has planeado con tu familia, pareja o amigos, sea inolvidable. 😎✨📣𝐂𝐨𝐭𝐢𝐳𝐚 𝐭𝐮 𝐩𝐫ó𝐱𝐢𝐦𝐚 𝐚𝐯𝐞𝐧𝐭𝐮𝐫𝐚 𝐲 𝐫𝐞𝐬𝐞𝐫𝐯𝐚 𝐜𝐨𝐧 𝐧𝐨𝐬𝐨𝐭𝐫𝐨𝐬 𝐚𝐡𝐨𝐫𝐚 ‼️👇👇👇👇👇https://wa.me/message/NOGROGMFHX6CP1BG Travel and Tours🧑‍💻 #viajes #SemanaSanta');">
+                <img src="destinos/nacionales/arequipa.jpg" width="100%" height="240px" alt="Arequipa">
+                <h2>Arequipa</h2>
+            </a>
         </div>
+       
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Ayacucho</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/nacionales/ayacucho.jpg', '𝑽𝒊𝒂𝒋𝒂 𝒂 𝑨𝒚𝒂𝒄𝒖𝒄𝒉𝒐 𝒆𝒏 𝒆𝒔𝒕𝒂 𝑺𝒆𝒎𝒂𝒏𝒂 𝑺𝒂𝒏𝒕𝒂 🤩 Incluye boleto aéreo y servicios  <span>✈️🏢➡️</span>En BG Travel and Tours, queremos brindarte una asesoría completa, para asegurarnos que tu experiencia de viaje que tanto has planeado con tu familia, pareja o amigos, sea inolvidable. 😎✨📣𝐂𝐨𝐭𝐢𝐳𝐚 𝐭𝐮 𝐩𝐫ó𝐱𝐢𝐦𝐚 𝐚𝐯𝐞𝐧𝐭𝐮𝐫𝐚 𝐲 𝐫𝐞𝐬𝐞𝐫𝐯𝐚 𝐜𝐨𝐧 𝐧𝐨𝐬𝐨𝐭𝐫𝐨𝐬 𝐚𝐡𝐨𝐫𝐚 ‼️👇👇👇👇👇https://wa.me/message/NOGROGMFHX6CP1BG Travel and Tours🧑‍💻 #viajes #SemanaSanta');">
+                <img src="destinos/nacionales/ayacucho.jpg" width="100%" height="240px" alt="Ayacucho">
+                <h2>Ayacucho</h2>
+            </a>
         </div>
     </section>
     <h1>DESTINOS INTERNACIONALES</h1>
-    <section class="catalogo-vn">
+    <section class="catalogo-v1">
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>España</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/internacionales/espana.jpg', '𝑽𝒊𝒂𝒋𝒂 𝒂 𝑨𝒚𝒂𝒄𝒖𝒄𝒉𝒐 𝒆𝒏 𝒆𝒔𝒕𝒂 𝑺𝒆𝒎𝒂𝒏𝒂 𝑺𝒂𝒏𝒕𝒂 🤩 Incluye boleto aéreo y servicios  <span>✈️🏢➡️</span>En BG Travel and Tours, queremos brindarte una asesoría completa, para asegurarnos que tu experiencia de viaje que tanto has planeado con tu familia, pareja o amigos, sea inolvidable. 😎✨📣𝐂𝐨𝐭𝐢𝐳𝐚 𝐭𝐮 𝐩𝐫ó𝐱𝐢𝐦𝐚 𝐚𝐯𝐞𝐧𝐭𝐮𝐫𝐚 𝐲 𝐫𝐞𝐬𝐞𝐫𝐯𝐚 𝐜𝐨𝐧 𝐧𝐨𝐬𝐨𝐭𝐫𝐨𝐬 𝐚𝐡𝐨𝐫𝐚 ‼️👇👇👇👇👇https://wa.me/message/NOGROGMFHX6CP1BG Travel and Tours🧑‍💻 #viajes #SemanaSanta');">
+                <img src="destinos/internacionales/espana.jpg" width="100%" height="240px" alt="España">
+                <h2>España</h2>
+            </a>
         </div>
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Colombia</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/internacionales/colombia.jpg', 'Descripción del paquete Colombia...');">
+                <img src="img/Destinos/D1.png" width="100%" height="240px" alt="Colombia">
+                <h2>Colombia</h2>
+            </a>
         </div>
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Republica Dominicana</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/internacionales/republica_dominicana.jpg', 'Descripción del paquete República Dominicana...');">
+                <img src="img/Destinos/D1.png" width="100%" height="240px" alt="República Dominicana">
+                <h2>República Dominicana</h2>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" onclick="abrirDescripcion('destinos/internacionales/panama.jpg', 'Descripción del paquete Panama...');">
+                <img src="img/Destinos/D1.png" width="100%" height="240px" alt="Panama">
+                <h2>Panama</h2>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" onclick="abrirDescripcion('destinos/internacionales/mexico.jpg', 'Descripción del paquete Mexico...');">
+                <img src="img/Destinos/D1.png" width="100%" height="240px" alt="Mexico">
+                <h2>Mexico</h2>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" onclick="abrirDescripcion('destinos/internacionales/estados_unidos.jpg', 'Descripción del paquete Estados Unidos...');">
+                <img src="img/Destinos/D1.png" width="100%" height="240px" alt="Estados Unidos">
+                <h2>Estados Unidos</h2>
+            </a>
         </div>
     </section>
-    <section class="catalogo-vn">
-        <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Panama</h2>
-        </div>
-        <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Mexico</h2>
-        </div>
-        <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Estados Unidos</h2>
-        </div>
-    </section>
+    
     <h1>Otros Servicios</h1>
     <section class="catalogo-o">
         <div class="item">
-            <img src="img/Destinos/D1.png" width="100%" height="240px" alt=""><h2>Servicio de Traslado Privado</h2>
+            <a href="#" onclick="abrirDescripcion('destinos/internacionales/estados_unidos.jpg', 'Descripción del paquete Estados Unidos...');">
+                <img src="img/Destinos/D1.png" width="100%" height="240px" alt="Servicio de Traslado privado">
+                <h2>Servicio de Traslado Privado</h2>
+            </a>
         </div>
+        
     </section>
+    <div class="redes">
+        <div class="itemc">
+            <img src="img/fb.png" width="100%" alt="">
+        </div>
+        <div class="itemc">
+            <img src="img/wap.png" width="100%" alt="">
+        </div>
+        <div class="itemc">
+            <img src="img/gmail.png" width="100%" alt="">
+        </div>
+        <div class="itemc">
+            <img src="img/contacto.png" width="100%" alt="">
+        </div>
+      </div>
 </body>
 </html>
